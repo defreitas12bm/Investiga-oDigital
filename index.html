@@ -3,134 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Investigação Digital - Contato</title>
-    <meta name="description" content="Entre em contato com a Investigação Digital para soluções em forense digital e crimes cibernéticos.">
+    <title>Contato - Investigação Digital</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <style>
-        /* Estilos CSS para a página de contato */
-        #contato .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        #contato h2 {
+        body {
+            font-family: Arial, sans-serif;
             color: #333;
+            background-color: #f5f7fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #2b2b2b;
             text-align: center;
             margin-bottom: 20px;
+            font-size: 28px;
         }
 
-        #contato p {
+        p {
             text-align: center;
-            margin-bottom: 20px;
-        }
-
-        #contato form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-        }
-
-        #contato input,
-        #contato textarea {
-            padding: 12px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
             font-size: 16px;
+            line-height: 1.6;
             color: #555;
         }
 
-        #contato textarea {
-            resize: vertical;
-            height: 150px;
+        .highlight {
+            font-weight: bold;
+            color: #007bff;
         }
 
-        #contato button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 14px 20px;
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        label {
+            font-size: 14px;
+            color: #555;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        textarea {
+            resize: none;
+            height: 120px;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 20px;
             border: none;
-            border-radius: 4px;
-            cursor: pointer;
+            border-radius: 5px;
             font-size: 18px;
+            cursor: pointer;
             transition: background-color 0.3s ease;
         }
 
-        #contato button:hover {
-            background-color: #45a049;
+        button:hover {
+            background-color: #0056b3;
         }
 
-        /* Estilos Responsivos */
-        @media (max-width: 600px) {
-            #contato .container {
-                padding: 10px;
-            }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 14px;
+        }
 
-            #contato input,
-            #contato textarea {
-                padding: 10px;
-                font-size: 14px;
-            }
+        footer a {
+            text-decoration: none;
+            color: #007bff;
+        }
 
-            #contato button {
-                padding: 12px 16px;
-                font-size: 16px;
-            }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <main>
-        <section id="contato">
-            <div class="container">
+    <div class="container">
+        <h2>Proteja o Futuro da Sua Empresa</h2>
+        <p>
+            Somos especialistas em <span class="highlight">Forense Digital</span>, <span class="highlight">Análise de Crimes Cibernéticos</span>, 
+            <span class="highlight">Recuperação de Dados</span> e <span class="highlight">Consultoria em Segurança da Informação</span>. 
+            Transformamos desafios digitais em soluções rápidas e eficazes. Entre em contato agora!
+        </p>
 
-                <h2>Nossos Serviços de Investigação Digital</h2>
-                <p>
-                    Proteja sua empresa e seus dados com nossos serviços especializados:
-                    <b>Forense Digital</b>, <b>Análise de Crimes Cibernéticos</b>,
-                    <b>Recuperação de Dados</b> e <b>Consultoria em Segurança da Informação</b>.
-                    Entre em contato para uma avaliação personalizada!
-                </p>
+        <h2>Fale Conosco</h2>
+        <p>Preencha o formulário abaixo e nossa equipe retornará o mais rápido possível.</p>
 
-                <h2>Entre em Contato Conosco</h2>
-                <p>Estamos prontos para ajudar! Use o formulário abaixo:</p>
+        <form action="https://formspree.io/f/xrbeydbb" method="POST">
+            <label for="email">Seu E-mail</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
 
-                <!-- modify this form HTML and place wherever you want your form -->
-                <form action="https://formspree.io/f/xrbeydbb" method="POST">
-                  <label>
-                    Your email:
-                    <input type="email" name="email">
-                  </label>
-                  <label>
-                    Your message:
-                    <textarea name="message"></textarea>
-                  </label>
-                  <!-- your other form fields go here -->
-                  <button type="submit">Send</button>
-                </form>
+            <label for="message">Sua Mensagem</label>
+            <textarea id="message" name="message" placeholder="Como podemos ajudar?" required></textarea>
 
-            </div>
-        </section>
-    </main>
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Investigação Digital | Todos os direitos reservados</p>
-            <nav>
-                <ul>
-                    <li><a href="termos.html">Termos de Uso</a></li>
-                    <li><a href="privacidade.html">Política de Privacidade</a></li>
-                </ul>
-            </nav>
-        </div>
+        <p>&copy; 2025 Investigação Digital | Todos os direitos reservados</p>
+        <a href="termos.html">Termos de Uso</a> | <a href="privacidade.html">Política de Privacidade</a>
     </footer>
-
-    <script src="script.js"></script>
 
 </body>
 </html>
